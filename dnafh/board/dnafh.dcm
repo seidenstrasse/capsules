@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLML6401
+D -12V Vds, -4,3A Id, HEXFET P-Channel MOSFET, SOT-23
+K HEXFET P-Channel MOSFET
+F http://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634
+$ENDCMP
+#
+$CMP ML8205A
+D 20V Vds, 6A Id, 25-40mOhm Rds, Dual N-Channel MOSFET, TSSOP-8
+K Dual N-Channel MOSFET Bat Protection
+F http://www.datasheetcafe.com/ml8205a-datasheet-battery-protection/
+$ENDCMP
+#
+$CMP MT3608
+D 2A,High Efficiency 1.2MHz Current Mode Step-Up Converter, sot23-6
+K step-up converter, boost
+F http://prom-electric.ru/media/MT3608.pdf
+$ENDCMP
+#
+$CMP TP4056
+D 1A Linear Li-lon Battery Charger with Thermal Regulation, SOP-8
+K battery charger li-ion
+F https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf
+$ENDCMP
+#
+#End Doc Library
