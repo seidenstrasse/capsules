@@ -140,7 +140,7 @@ L R R3
 U 1 1 5895EF9A
 P 3550 1400
 F 0 "R3" V 3600 1550 50  0000 C CNN
-F 1 "220" V 3550 1400 50  0000 C CNN
+F 1 "100" V 3550 1400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3480 1400 50  0001 C CNN
 F 3 "" H 3550 1400 50  0000 C CNN
 	1    3550 1400
@@ -151,7 +151,7 @@ L R R4
 U 1 1 5895F071
 P 3550 1600
 F 0 "R4" V 3600 1750 50  0000 C CNN
-F 1 "100" V 3550 1600 50  0000 C CNN
+F 1 "500" V 3550 1600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3480 1600 50  0001 C CNN
 F 3 "" H 3550 1600 50  0000 C CNN
 	1    3550 1600
@@ -245,7 +245,7 @@ $EndComp
 Text Notes 1450 1000 0    60   ~ 0
 Li-Ion Charger
 $Comp
-L USB_OTG P1
+L USB_OTG-RESCUE-definitely_not_a_fire_hazard P1
 U 1 1 58963CCF
 P 800 1700
 F 0 "P1" H 1125 1575 50  0000 C CNN
@@ -553,9 +553,6 @@ Wire Wire Line
 	4000 2700 4000 3050
 Connection ~ 4000 3050
 Wire Wire Line
-	4750 2650 4450 2650
-Connection ~ 4450 2650
-Wire Wire Line
 	5100 2300 5100 3050
 Wire Notes Line
 	5500 3300 5500 900 
@@ -563,9 +560,9 @@ Wire Wire Line
 	4950 2350 5100 2350
 Connection ~ 5100 2350
 Wire Wire Line
-	5100 2000 5100 1900
+	5100 1900 5100 2000
 Wire Wire Line
-	5100 1900 4450 1900
+	4450 1900 5100 1900
 Connection ~ 4450 1900
 Connection ~ 4450 1500
 Wire Wire Line
@@ -670,7 +667,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 1250 5150 1250
 $Comp
-L SW_SPST SW1
+L SW_SPST-RESCUE-definitely_not_a_fire_hazard SW1
 U 1 1 58A755AE
 P 6700 4850
 F 0 "SW1" H 6700 4975 50  0000 C CNN
@@ -779,4 +776,9 @@ F 3 "" H 6850 4350 50  0000 C CNN
 	1    6850 4350
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4750 2650 4450 2650
+Connection ~ 4450 2650
+Text Notes 5750 1350 0    60   ~ 0
+TODO:\n* CE von 4056 an pulldown
 $EndSCHEMATC
